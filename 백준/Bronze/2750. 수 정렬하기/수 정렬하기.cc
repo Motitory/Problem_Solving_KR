@@ -15,6 +15,7 @@ int main(int argc, char* argn[]) {
 		cin >> arr[i];
 	}
 
+	// 선택정렬
 	for (int i = 1; i <= N - 1; i++) {
 		for (int j = i + 1; j <= N; j++) {
 			if (arr[i] > arr[j]) {
