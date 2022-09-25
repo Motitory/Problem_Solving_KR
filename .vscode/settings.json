@@ -3,6 +3,8 @@
     "iostream": "cpp",
     "ios": "cpp",
     "complex": "cpp",
-    "string": "cpp"
-  }
+    "string": "cpp",
+    "vector": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "Disabled"
 }
