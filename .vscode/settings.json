@@ -5,7 +5,10 @@
     "complex": "cpp",
     "string": "cpp",
     "vector": "cpp",
-    "__locale": "cpp"
+    "__locale": "cpp",
+    "tuple": "cpp",
+    "type_traits": "cpp",
+    "utility": "cpp"
   },
   "C_Cpp.errorSquiggles": "Disabled"
 }
