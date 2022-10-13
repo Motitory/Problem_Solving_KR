@@ -8,7 +8,8 @@
     "__locale": "cpp",
     "tuple": "cpp",
     "type_traits": "cpp",
-    "utility": "cpp"
+    "utility": "cpp",
+    "stack": "cpp"
   },
   "C_Cpp.errorSquiggles": "Disabled"
 }
