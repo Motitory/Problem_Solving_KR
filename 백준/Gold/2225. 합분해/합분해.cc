@@ -2,29 +2,24 @@
 
 using namespace std;
 
-long long d[201][201];
-long long mod = 1000000000;
+long long d[201];
+const long long mod = 1000000000;
 
 int main(int argc, char* argn[]) {
 	ios_base::sync_with_stdio(false);
 	cin.tie(nullptr); cout.tie(nullptr);
 
-	int n, k;
-	cin >> n >> k;
-	d[0][0] = 1LL;
-	// d[k][n] = d[k - 1][n] + d[k][n - 1];
-	for (int i = 1; i <= k; i++) {
-		for (int j = 0; j <= n; j++) {
-			// d[k - 1][n]
-			d[i][j] = d[i - 1][j];
-			// d[k][n - 1]
-			if (j - 1 >= 0)
-				d[i][j] += d[i][j - 1];
-			d[i][j] %= mod;
+	int n, m;
+	cin >> n >> m;
+	d[0] = 1;
+	for (int i = 1; i <= m; i++) {
+		for (int j = 1; j <= n; j++) {
+			d[j] += d[j - 1];
+			d[j] %= mod;
 		}
 	}
 
-	cout << d[k][n] << '\n';
+	cout << d[n] << '\n';
 
-	return 0;
+	return 0;	
 }
