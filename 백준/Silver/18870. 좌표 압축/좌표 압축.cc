@@ -24,6 +24,7 @@ int main(int argc, char* argn[]) {
 	for (int i = 0; i < n; i++) {
 		// i번째 요소 값 it
 		auto it = lower_bound(vt.begin(), vt.end(), v[i]);
+		// 요소값에서 시작 주소 값 뺀 것이 답
 		cout << it - vt.begin() << ' ';
 	}
 		
