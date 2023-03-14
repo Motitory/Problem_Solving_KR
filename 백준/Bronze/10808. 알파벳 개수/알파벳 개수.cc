@@ -1,22 +1,21 @@
-#include <iostream>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-int main(int argc, char* argn[]) {
-	ios_base::sync_with_stdio(0);
-	cin.tie(0); cout.tie(0);
+string str;
+int alpha[26];
 
-	int freq[26];
-	fill(freq, freq + 26, 0);
+int main() {
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL); cout.tie(NULL);
 
-	string s;
-	cin >> s;
+	cin >> str;
 
-	for (int i = 0; i < s.length(); i++)
-		freq[s[i] - 'a']++;
+	for (char c : str)
+		alpha[c - 'a']++;
 
-	for (int i = 0; i < 26; i++)
-		cout << freq[i] << " ";
+	for (auto i : alpha)
+		cout << i << ' ';
 
 	return 0;
 }
